@@ -1,0 +1,427 @@
+\documentclass[12pt]{article}
+
+\usepackage[T1]{fontenc} \usepackage[icelandic]{babel}
+\usepackage{latexsym,amssymb,amsmath}
+\usepackage{enumitem}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{LastPage}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{pgfplots}
+\usepackage{listings}
+\usepackage{color}
+\lstset{ %
+  language=R,                     % the language of the code
+  basicstyle=\footnotesize\ttfamily,       % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it's 1, each line
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  title=\lstname,                 % show the filename of files included with \lstinputlisting;
+                                  % also try caption instead of title
+  keywordstyle=\color{blue},      % keyword style
+  commentstyle=\color{green},   % comment style
+  stringstyle=\color{red},      % string literal style
+  escapeinside={\%*}{*)},         % if you want to add a comment within your code
+  morekeywords={*,...}            % if you want to add more keywords to the set
+} 
+
+
+\voffset=-1.0in
+\hoffset=-0.5in
+\textwidth=6in
+\textheight=9.0in
+
+\begin{document}
+
+\pagestyle{fancy}
+
+\lhead{Egill Ian Guðmundsson}
+\chead{eig20@hi.is}
+\rhead{bls. \thepage ~af \pageref{LastPage}}
+
+\newcommand{\br}{\par}
+\newcommand{\substackpar}{}
+\newcommand{\substackbr}{,\,}
+%\usepackage{makeidx}
+\newcommand{\bolddot}{{\mathbf \cdot}}
+\newcommand{\C}{{\mathbb  C}}
+\newcommand{\Cn}{{\mathbb  C\sp n}}
+\newcommand{\crn}{{{\mathbb  C\mathbb  R^n}}}
+\newcommand{\R}{{\mathbb  R}}
+\newcommand{\Rn}{{\mathbb  R\sp n}}
+\newcommand{\Rnn}{{\mathbb  R\sp{n\times n}}}
+\newcommand{\Z}{{\mathbb  Z}}
+\newcommand{\N}{{\mathbb  N}}
+\renewcommand{\P}{{\mathbb  P}}
+\newcommand{\Q}{{\mathbb  Q}}
+\newcommand{\U}{{\mathbb  U}}
+\newcommand{\D}{{\mathbb  D}}
+\newcommand{\T}{{\mathbb  T}}
+\newcommand{\A}{{\cal A}}
+\newcommand{\E}{{\cal E}}
+\newcommand{\F}{{\cal F}}
+\renewcommand{\H}{{\cal H}}
+\renewcommand{\L}{{\cal L}}
+\newcommand{\M}{{\cal M}}
+\renewcommand{\O}{{\cal O}}
+\renewcommand{\S}{{\cal S}}
+\newcommand{\dash}{{\sp{\prime}}}
+\newcommand{\ddash}{{\sp{\prime\prime}}}
+\newcommand{\tdash}{{\sp{\prime\prime\prime}}}
+\newcommand{\set }[1]{{\{#1\}}}
+\newcommand{\scalar}[2]{{\langle#1,#2\rangle}}
+\newcommand{\arccot}{{\operatorname{arccot}}}
+\newcommand{\arccoth}{{\operatorname{arccoth}}}
+\newcommand{\arccosh}{{\operatorname{arccosh}}}
+\newcommand{\arcsinh}{{\operatorname{arcsinh}}}
+\newcommand{\arctanh}{{\operatorname{arctanh}}}
+\newcommand{\Log}{{\operatorname{Log}}}
+\newcommand{\Arg}{{\operatorname{Arg}}}
+\newcommand{\grad}{{\operatorname{grad}}}
+\newcommand{\graf}{{\operatorname{graf}}}
+\renewcommand{\div}{{\operatorname{div}}}
+\newcommand{\rot}{{\operatorname{rot}}}
+\newcommand{\curl}{{\operatorname{curl}}}
+\renewcommand{\Im}{{\operatorname{Im\, }}}
+\renewcommand{\Re}{{\operatorname{Re\, }}}
+\newcommand{\Res}{{\operatorname{Res}}}
+\newcommand{\vp}{{\operatorname{vp}}}
+\newcommand{\mynd}[1]{{{\operatorname{mynd}(#1)}}}
+\newcommand{\dbar}{{{\overline\partial}}}
+\newcommand{\inv}{{\operatorname{inv}}}
+\newcommand{\sign}{{\operatorname{sign}}}
+\newcommand{\trace}{{\operatorname{trace}}}
+\newcommand{\conv}{{\operatorname{conv}}}
+\newcommand{\Span}{{\operatorname{Sp}}}
+\newcommand{\stig}{{\operatorname{stig}}}
+\newcommand{\Exp}{{\operatorname{Exp}}}
+\newcommand{\diag}{{\operatorname{diag}}}
+\newcommand{\adj}{{\operatorname{adj}}}
+\newcommand{\erf}{{\operatorname{erf}}}
+\newcommand{\erfc}{{\operatorname{erfc}}}
+\renewcommand{\ast}{{\operatorname{\text{?st}}}}
+\newcommand{\Lloc}{{L_{\text{loc}}\sp 1}}
+\newcommand{\boldcdot}{{\mathbb \cdot}}
+%\newcommand{\Cinf0}[1]{{C_0\sp{\infty}(#1)}}
+\newcommand{\supp}{{\text{supp}\, }}
+\newcommand{\chsupp}{{\text{ch supp}\, }}
+\newcommand{\singsupp}{{\text{sing supp}\, }}
+\newcommand{\SL}[1]{{\dfrac {1}{\varrho} \bigg(-\dfrac d{dx}\bigg(p\dfrac {d#1}{dx}\bigg)+q#1\bigg)}}
+\newcommand{\SLL}[1]{-\dfrac d{dx}\bigg(p\dfrac {d#1}{dx}\bigg)+q#1}
+\newcommand{\Laplace}[1]{\dfrac{\partial^2 #1}{\partial x^2}+\dfrac{\partial^2 #1}{\partial y^2}}
+\newcommand{\polh}[1]{{\widehat #1_{\C^n}}}
+\newcommand{\tilv}{{}}
+
+\newcommand{\sz}{\overline{z}}
+\newcommand{\saf}{\overline{f}}
+\newcommand{\sw}{\overline{w}}
+
+\newcommand{\pz}{\partial_z}
+\newcommand{\psz}{\partial_{\overline{z}}}
+%%%
+
+\newcommand{\Nv}{\mbox{${\bf N}$}}
+
+\newcommand{\Bv}{\mbox{${\bf B}$}}
+
+
+\newcommand{\Tv}{\mbox{${\bf T}$}}
+
+%%%
+
+\centerline{\bf \LARGE Líkindareikningur og Tölfræði STÆ203G}
+\medskip %breyta
+
+
+
+
+\centerline{\bf \Large Tölvuverkefni 3 }
+\centerline{\bf Egill Ian Guðmundsson, 260693-2639}
+
+\medskip
+
+\textbf{Verkefni 1 } \\
+
+Sólarhringsúrkoma hversa dags er mæld kl 9:00 á morgnana. Mælingar á mestu sólarhringsúrkomu (mm) á Fagurhólsmýri innan hvers árs fyrir árin 1924 til 2007 (n = 84) er að finna í gagnaskránni \verb|precipitation_fagurhm.txt|. Notið þessi gögn til að reikna stærðirnar sem eru gefnar fyrir neðan.
+
+\medspace
+
+\textbf{1.a. } Reiknið meðaltal, miðgildi, dreifni, staðalfrávik, fyrsta fjórðungsmark, þriðja fjórðungsmark og fjórðungsbil fyrir úrtakið og setjið saman í eina töflu. 
+
+\medspace
+
+\textbf{Svar: } Við keyrum \verb|precipitationStats.r| forritið sem fylgir með í viðauka til að fá eftirfarandi niðurstöðu:
+
+\begin{figure}[h]
+	\includegraphics[width = 150mm]{precipitationStats.png}
+\end{figure}
+
+Þar sem öll gildin sem beðið var um koma fyrir.
+
+\medspace
+
+\textbf{1.b. } Hvort er meðaltalið eða miðgildið stærra? Hvers vegna?
+
+\medspace
+
+\textbf{Svar: } Eins og sést af töflunni að ofan er meðaltalið stærra en miðgildið. Þetta er væntanlega sökum þess að að eru nokkrir "útlagar" sem eru mun hærri en miðgildið en engir "útlagar" sem eru fyrir neðan miðgildið. \\
+
+Áhrifin sem þetta hefur er að útlagarnir fyrir ofan hífa upp meðaltalið og skekkja það svo það verður hærra en miðgildið. Eins myndi miðgildið vera hærra en meðaltalið ef útlagarnir fyrir neðan miðgildið væru fleiri en útlagarnir fyrir ofan.
+
+\medspace
+
+\textbf{1.c. } Á hvaða bili liggja 50\% af mælingum sitt hvorum megin við miðgildið?
+
+\medspace
+
+\textbf{Svar: } Svarið er einfaldlega bilið sem er milli fyrsta fjórðungsmarks og þriðja fjórðungsmarks. Eins og sést á mynd að ofan reiknast bilið [56.775 ; 82.525]
+
+\medspace
+
+\textbf{1.d. } Reiknið logrann af hverju staki í gögnunum og reiknið sömu stærðir og hér að ofan í 1.a. en setjið gögnin í nýja töflu.
+
+\medspace
+
+\textbf{Svar: } Aftur má athuga myndina til að sjá töfluna með gögnunum fyrir logragögnin:
+
+\begin{figure}[h]
+	\includegraphics[width = 150mm]{precipitationStats.png}
+\end{figure}
+
+\newpage
+
+\textbf{Verkefni 2} \\
+
+Hér á að teikna myndir af gögnunum. Byggt á myndunum á að meta hvort að normaldreifingin lýsi gögnunum nægjanlega vel. Einnig á að meta hvort að normaldreifingin lýsi logranum af gögnunum nægjanlega vel. Teiknið eftirfarandi:
+
+\medspace
+
+\textbf{2.a. } Teiknið árlega hámarkssólarhringsúrkomu á móti tíma. Á hvaða ári rigndi mest? \\
+
+
+\textbf{Svar: } Við keyrum fall úr \verb|precipitationGraphs.r| með skipun \\ 
+\verb|precipitationGraphs(0,FALSE)| til að fá eftirfarandi mynd:
+
+\begin{figure}[h]
+	\includegraphics[width = 150mm]{scatter.png}
+\end{figure}
+
+Forritið gefur síðan eftirfarandi úttak á skipanalínu: \\
+\verb|Maximum precipitation was 125 in the year 1936|
+
+\medspace
+
+\textbf{2.b. } Kassarit. Sýnir kassaritið einhverja útlaga?
+
+\medspace
+
+\textbf{Svar: } Við keyrum sama fall og áðan með skipun \verb|precipitationGraphs(1,FALSE)| til að fá eftirfarandi mynd:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 120mm]{boxplot.png}
+\end{figure}
+
+\medspace
+
+Einnig gefur forritið eftirfarandi úttak á skipanalínuna: \\
+\verb|Number of outliers in boxplot: 2|
+
+\medspace
+
+\textbf{2.c. } Tíðnirit með flatarmál sem er jafn einum. Teiknið ofan á það þéttifall normaldreifingar meðalgildi jafnt $ \overline{x} $ og staðalfráviki $ s $.
+
+\medspace
+
+\textbf{Svar: } Við notum skipunina \verb|precipitationGraphs(2,FALSE)| og fáum:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 150mm]{histogram.png}
+\end{figure}
+
+\medspace
+
+\textbf{2.d. } Dreififall úrtaks. Teiknið ofan á sætisfall úrtaksins sætisfall normaldreifingar með meðalgildi jafnt $ \overline{x} $ og staðalfráviki $ s $.
+
+\medspace
+
+\textbf{Svar: } Keyrum fallið aftur með skipun \verb|precipitationGraphs(3,FALSE)| og fáum: 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 130mm]{cumulative.png}
+\end{figure}
+
+\medspace
+
+\textbf{2.e. } Sætisfall úrtaks. Teiknið ofan á það sætisfall normaldreifingar með meðalgildi jafnt $ \overline{x} $ og staðalfráviki $ s $.
+
+\medspace
+
+\textbf{Svar: } Keyrum þetta fall enn eina ferðina með skipun \verb|precipitationGraphs(4,FALSE)| til að fá:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 150mm]{quantile.png}
+\end{figure}
+
+\medspace
+
+\textbf{2.f. } Teiknið sömu myndir og og í liðunum að ofan nema með logragildin af gögnunum.
+
+\medspace
+
+\textbf{Svar: } Notum þetta mjög svo skemmtilega forrit nokkrum sinnum í viðbót nema hvað að núna er seinna viðfangið \verb|TRUE| í öllum tilfellum. Þá fást þessar undurfögru og mjög svo fróðlegu gröf:
+
+\begin{figure}[h]
+	\includegraphics[width = 150mm]{logscatter.png}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h]
+	\includegraphics[width = 150mm]{logbox.png}
+\end{figure}
+
+\begin{figure}[h]
+	\includegraphics[width = 150mm]{loghist.png}
+\end{figure}
+
+\begin{figure}[h]
+	\includegraphics[width = 150mm]{logcdf.png}
+\end{figure}
+
+\newpage
+
+\begin{figure}[h]
+	\includegraphics[width = 150mm]{logquant.png}
+\end{figure}
+
+
+\medspace
+
+\textbf{2.g. } Lýsir normaldreifing gögnunum nægjanlega vel? Lýsir lognormaldreifing gögnunum nægjanlega
+vel? Notið myndirnar úr liðunum hér fyrir ofan til að rökstyðja svör ykkar.
+
+\medspace
+
+\textbf{Svar: } Bæði normaldreifing og lognormaldreifing lýsa gögnunum nokkuð vel eins og sést á ferlum að ofan (falla nokkuð vel að fræðilegum normaldrefingum). Hins vegar er lognormaldreifingin aðeins betri þar sem hún er nákvæmari og skekkjur eru minni.
+
+\newpage
+
+\textbf{Verkefni 3} \\
+Hér á að teikna tvær myndir, þá fyrri byggða á gögnunum og hina byggða á logranum af gögnunum. Látum $ x_1 < x_2 < ... < x_i $ tákna röðuðu gögnin
+
+\medspace
+
+\textbf{3.a. } Teiknið $ x_i $ á x-ás og $ \mu + \sigma \Phi^{-1}(i/(n+1))$. Teiknið á sömu mynd línuna $ y = x $.
+
+\medspace
+
+\textbf{Svar: } Keyrum fall með skipun \verb|precipitationQnormGraphs(FALSE)| til að fá eftirfarandi graf:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 150mm]{function.png}
+\end{figure}
+
+\medspace
+
+\textbf{3.b. } Teiknið $ x_i $ á x-ás og $ \mu_y + \sigma_y \Phi^{-1}(i/(n+1))$. Teiknið á sömu mynd línuna $ y = x $.
+
+\medspace
+
+\textbf{Svar: } Keyrum fall með skipun \verb|precipitationQnormGraphs(TRUE)| til að fá eftirfarandi graf:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width = 150mm]{logFunction.png}
+\end{figure}
+
+\newpage
+
+\textbf{3.c. } Því nær sem að punktarnir eru beinu línunni því betur lýsir dreifingin sem er lögð til gögnunum.
+Notið þessar tvær myndir til að svara eftirfarandi spurningum. Lýsir normaldreifing gögnunum
+nægjanlega vel? Lýsir lognormaldreifing gögnunum nægjanlega vel?
+
+\medspace
+
+\textbf{Svar: } Af þessum tveimur myndum að dæma er log-normaldreifing þó nokkuð nákvæmari en normaldreifing. Hvort log-normaldreifing eða normaldreifing er "nægjanleg" fer alfarið eftir því hvað er verið að gera hverju sinni.
+
+\newpage
+
+\textbf{Verkefni 4}\\
+
+Metið líkurnar á því að sólarhringsúrkoma á Fagurhólsmýri sé meiri en 115 mm, það er, metið P (X >
+115)
+
+\medspace
+
+\textbf{4.a. } með því að finna hlutfall mælinga stærri en 115 mm.\\
+
+\textbf{4.b. } með því að gera ráð fyrir að normaldreifingin lýsi mælingunum nægjanlega vel. \\
+
+\textbf{4.c. } með því að gera ráð fyrir að normaldreifingin lýsi logranum af mælingunum nægjanlega vel. 
+
+\medspace
+
+\textbf{Svar: } Við keyrum seinasta fallið með kallinu \verb|precipitationEstimation(115)| og fáum:
+
+\begin{verbatim}
+	> precipitationEstimation(115)
+	Probability of more than 115 mm of precipitation built 
+	on proportions: 0.0357142857142857
+	Probability of more than 115 mm of precipitation built 
+	on normal distribution: 0.0108397295634248
+	Probability of more than 115 mm of precipitation built 
+	on log-normal distribution: 0.024905613055092
+\end{verbatim}
+
+\medspace
+
+\textbf{4.d. } Ef þið ættuð að meta P (X > 130), hvaða aðferð munduð þið nota? Aðferðina í (a), (b), (c) eða
+einhverja aðra aðferð? Útskýrið val ykkar.
+
+\medspace
+
+\textbf{Svar: } Af fyrrum liðum að dæma væri skynsamlegast að velja log-normal dreifingu. Hlutfalls-ágiskun er afar ónákvæm aðferð og byggist bara á gögnum sem eru þegar komin. Skekkjur í því módeli magnast upp með svona ágiskunum. Log-normaldreifing virðist draga mun frekar úr skekkjum heldur en normaldreifing og gefa betri niðurstöður. Eflaust eru til flóknari og betri aðferðir til að smíða svona líkön en áætla má að log-normaldreifing gefi nógu nákvæma mynd fyrir hin ýsmu verk.
+
+\newpage
+
+\textbf{}
+
+\centerline{\bf \Large Viðauki - Forrit }
+
+\textbf{Verkefni 1} \\
+
+\lstinputlisting{precipitationStats.r}
+
+\textbf{Verkefni 2} \\
+
+\lstinputlisting{precipitationGraphs.r}
+
+\textbf{Verkefni 3} \\
+
+\lstinputlisting{precipitationQnormGraphs.r}
+
+\textbf{Verkefni 4} \\
+
+\lstinputlisting{precipitationEstimation.r}
+
+
+\end{document}

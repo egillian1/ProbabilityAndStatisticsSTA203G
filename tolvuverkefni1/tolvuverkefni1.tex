@@ -1,0 +1,202 @@
+\documentclass[12pt]{article}
+
+\usepackage[T1]{fontenc} \usepackage[icelandic]{babel}
+\usepackage{latexsym,amssymb,amsmath}
+\usepackage{enumitem}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{LastPage}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{pgfplots}
+\usepackage{listings}
+\usepackage{color}
+\lstset{ %
+  language=R,                     % the language of the code
+  basicstyle=\footnotesize\ttfamily,       % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it's 1, each line
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  title=\lstname,                 % show the filename of files included with \lstinputlisting;
+                                  % also try caption instead of title
+  keywordstyle=\color{blue},      % keyword style
+  commentstyle=\color{green},   % comment style
+  stringstyle=\color{red},      % string literal style
+  escapeinside={\%*}{*)},         % if you want to add a comment within your code
+  morekeywords={*,...}            % if you want to add more keywords to the set
+} 
+
+
+\voffset=-1.0in
+\hoffset=-0.5in
+\textwidth=6in
+\textheight=9.0in
+
+\begin{document}
+
+\pagestyle{fancy}
+
+\lhead{Egill Ian Guðmundsson}
+\chead{eig20@hi.is}
+\rhead{bls. \thepage ~af \pageref{LastPage}}
+
+\newcommand{\br}{\par}
+\newcommand{\substackpar}{}
+\newcommand{\substackbr}{,\,}
+%\usepackage{makeidx}
+\newcommand{\bolddot}{{\mathbf \cdot}}
+\newcommand{\C}{{\mathbb  C}}
+\newcommand{\Cn}{{\mathbb  C\sp n}}
+\newcommand{\crn}{{{\mathbb  C\mathbb  R^n}}}
+\newcommand{\R}{{\mathbb  R}}
+\newcommand{\Rn}{{\mathbb  R\sp n}}
+\newcommand{\Rnn}{{\mathbb  R\sp{n\times n}}}
+\newcommand{\Z}{{\mathbb  Z}}
+\newcommand{\N}{{\mathbb  N}}
+\renewcommand{\P}{{\mathbb  P}}
+\newcommand{\Q}{{\mathbb  Q}}
+\newcommand{\U}{{\mathbb  U}}
+\newcommand{\D}{{\mathbb  D}}
+\newcommand{\T}{{\mathbb  T}}
+\newcommand{\A}{{\cal A}}
+\newcommand{\E}{{\cal E}}
+\newcommand{\F}{{\cal F}}
+\renewcommand{\H}{{\cal H}}
+\renewcommand{\L}{{\cal L}}
+\newcommand{\M}{{\cal M}}
+\renewcommand{\O}{{\cal O}}
+\renewcommand{\S}{{\cal S}}
+\newcommand{\dash}{{\sp{\prime}}}
+\newcommand{\ddash}{{\sp{\prime\prime}}}
+\newcommand{\tdash}{{\sp{\prime\prime\prime}}}
+\newcommand{\set }[1]{{\{#1\}}}
+\newcommand{\scalar}[2]{{\langle#1,#2\rangle}}
+\newcommand{\arccot}{{\operatorname{arccot}}}
+\newcommand{\arccoth}{{\operatorname{arccoth}}}
+\newcommand{\arccosh}{{\operatorname{arccosh}}}
+\newcommand{\arcsinh}{{\operatorname{arcsinh}}}
+\newcommand{\arctanh}{{\operatorname{arctanh}}}
+\newcommand{\Log}{{\operatorname{Log}}}
+\newcommand{\Arg}{{\operatorname{Arg}}}
+\newcommand{\grad}{{\operatorname{grad}}}
+\newcommand{\graf}{{\operatorname{graf}}}
+\renewcommand{\div}{{\operatorname{div}}}
+\newcommand{\rot}{{\operatorname{rot}}}
+\newcommand{\curl}{{\operatorname{curl}}}
+\renewcommand{\Im}{{\operatorname{Im\, }}}
+\renewcommand{\Re}{{\operatorname{Re\, }}}
+\newcommand{\Res}{{\operatorname{Res}}}
+\newcommand{\vp}{{\operatorname{vp}}}
+\newcommand{\mynd}[1]{{{\operatorname{mynd}(#1)}}}
+\newcommand{\dbar}{{{\overline\partial}}}
+\newcommand{\inv}{{\operatorname{inv}}}
+\newcommand{\sign}{{\operatorname{sign}}}
+\newcommand{\trace}{{\operatorname{trace}}}
+\newcommand{\conv}{{\operatorname{conv}}}
+\newcommand{\Span}{{\operatorname{Sp}}}
+\newcommand{\stig}{{\operatorname{stig}}}
+\newcommand{\Exp}{{\operatorname{Exp}}}
+\newcommand{\diag}{{\operatorname{diag}}}
+\newcommand{\adj}{{\operatorname{adj}}}
+\newcommand{\erf}{{\operatorname{erf}}}
+\newcommand{\erfc}{{\operatorname{erfc}}}
+\renewcommand{\ast}{{\operatorname{\text{?st}}}}
+\newcommand{\Lloc}{{L_{\text{loc}}\sp 1}}
+\newcommand{\boldcdot}{{\mathbb \cdot}}
+%\newcommand{\Cinf0}[1]{{C_0\sp{\infty}(#1)}}
+\newcommand{\supp}{{\text{supp}\, }}
+\newcommand{\chsupp}{{\text{ch supp}\, }}
+\newcommand{\singsupp}{{\text{sing supp}\, }}
+\newcommand{\SL}[1]{{\dfrac {1}{\varrho} \bigg(-\dfrac d{dx}\bigg(p\dfrac {d#1}{dx}\bigg)+q#1\bigg)}}
+\newcommand{\SLL}[1]{-\dfrac d{dx}\bigg(p\dfrac {d#1}{dx}\bigg)+q#1}
+\newcommand{\Laplace}[1]{\dfrac{\partial^2 #1}{\partial x^2}+\dfrac{\partial^2 #1}{\partial y^2}}
+\newcommand{\polh}[1]{{\widehat #1_{\C^n}}}
+\newcommand{\tilv}{{}}
+
+\newcommand{\sz}{\overline{z}}
+\newcommand{\saf}{\overline{f}}
+\newcommand{\sw}{\overline{w}}
+
+\newcommand{\pz}{\partial_z}
+\newcommand{\psz}{\partial_{\overline{z}}}
+%%%
+
+\newcommand{\Nv}{\mbox{${\bf N}$}}
+
+\newcommand{\Bv}{\mbox{${\bf B}$}}
+
+
+\newcommand{\Tv}{\mbox{${\bf T}$}}
+
+%%%
+
+\centerline{\bf \LARGE Líkindareikningur og Tölfræði STÆ203G}
+\medskip %breyta
+
+
+
+
+\centerline{\bf \Large Tölvuverkefni 1 }
+\centerline{\bf Egill Ian Guðmundsson, 260693-2639}
+
+\medskip
+
+\textbf{Liður 1:} Sé fyrra forritið keyrt sem fylgir á þessu blaði fæst eftirfarandi niðurstaða fyrir 1000 ítranir af 150 skrefa lotum:
+
+\medskip
+
+\includegraphics[scale=1]{number1.png}
+
+\medskip
+
+Það er, maðurinn er að meðaltali kominn 138.825 einingar til hægri miðað við upphafsstöðu eftir 150 skref.
+
+\bigskip
+
+\textbf{Liður 2: } Eftir að fyrra forritið hefur keyrt 1000 sinnum með 150 skrefa lotum fæst það sama og að ofan:
+
+\medskip
+
+\includegraphics[scale=1]{number1.png}
+
+\medskip
+
+Og þá er staðalfrávikið í þessari tiltekinni keyrslu um 9.9123 .
+
+\medskip
+
+\textbf{Liður 3: } Keyrum seinna forritið með 5 ítrunum og 150 skref í hverri ítrun til að fá eftirfarandi mynd:
+
+\medskip
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{number2.png}
+\end{figure}
+
+\newpage
+
+Eftirfarandi forrit leysir þá lið 1 og 2 á einu bretti og skilar gildunum í skipanaglugganum í R umhverfinu. Það tekur inn skrefafjölda (totalstepcount) og ítranafjöldi (iterations).
+
+\lstinputlisting{stepProblem.r}
+
+\newpage
+
+Þetta forrit sér um að teikna ákveðinn fjölda ítrana (iterations) á eitt graf þar sem hver ítrun er með tiltekinn fjölda skrefa (stepcount). Úttakið er þá graf búið til af R umhverfinu með heildarfærslu á x-ás og skrefafjölda (tíma) á y-ás.
+
+\lstinputlisting{stepGraph.r}
+
+\end{document}

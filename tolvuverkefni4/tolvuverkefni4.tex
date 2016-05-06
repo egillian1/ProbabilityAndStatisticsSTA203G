@@ -1,0 +1,274 @@
+\documentclass[12pt]{article}
+
+\usepackage[T1]{fontenc} \usepackage[icelandic]{babel}
+\usepackage{latexsym,amssymb,amsmath}
+\usepackage{enumitem}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{LastPage}
+\usepackage{tikz}
+\usepackage{float}
+\usepackage{pgfplots}
+\usepackage{listings}
+\usepackage{color}
+\lstset{ %
+  language=R,                     % the language of the code
+  basicstyle=\footnotesize\ttfamily,       % the size of the fonts that are used for the code
+  numbers=left,                   % where to put the line-numbers
+  numberstyle=\tiny\color{gray},  % the style that is used for the line-numbers
+  stepnumber=1,                   % the step between two line-numbers. If it's 1, each line
+                                  % will be numbered
+  numbersep=5pt,                  % how far the line-numbers are from the code
+  backgroundcolor=\color{white},  % choose the background color. You must add \usepackage{color}
+  showspaces=false,               % show spaces adding particular underscores
+  showstringspaces=false,         % underline spaces within strings
+  showtabs=false,                 % show tabs within strings adding particular underscores
+  frame=single,                   % adds a frame around the code
+  rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+  tabsize=2,                      % sets default tabsize to 2 spaces
+  captionpos=b,                   % sets the caption-position to bottom
+  breaklines=true,                % sets automatic line breaking
+  breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+  title=\lstname,                 % show the filename of files included with \lstinputlisting;
+                                  % also try caption instead of title
+  keywordstyle=\color{blue},      % keyword style
+  commentstyle=\color{green},   % comment style
+  stringstyle=\color{red},      % string literal style
+  escapeinside={\%*}{*)},         % if you want to add a comment within your code
+  morekeywords={*,...}            % if you want to add more keywords to the set
+} 
+
+
+\voffset=-1.0in
+\hoffset=-0.5in
+\textwidth=6in
+\textheight=9.0in
+
+\begin{document}
+
+\pagestyle{fancy}
+
+\lhead{Egill Ian Guðmundsson}
+\chead{eig20@hi.is}
+\rhead{bls. \thepage ~af \pageref{LastPage}}
+
+\newcommand{\br}{\par}
+\newcommand{\substackpar}{}
+\newcommand{\substackbr}{,\,}
+%\usepackage{makeidx}
+\newcommand{\bolddot}{{\mathbf \cdot}}
+\newcommand{\C}{{\mathbb  C}}
+\newcommand{\Cn}{{\mathbb  C\sp n}}
+\newcommand{\crn}{{{\mathbb  C\mathbb  R^n}}}
+\newcommand{\R}{{\mathbb  R}}
+\newcommand{\Rn}{{\mathbb  R\sp n}}
+\newcommand{\Rnn}{{\mathbb  R\sp{n\times n}}}
+\newcommand{\Z}{{\mathbb  Z}}
+\newcommand{\N}{{\mathbb  N}}
+\renewcommand{\P}{{\mathbb  P}}
+\newcommand{\Q}{{\mathbb  Q}}
+\newcommand{\U}{{\mathbb  U}}
+\newcommand{\D}{{\mathbb  D}}
+\newcommand{\T}{{\mathbb  T}}
+\newcommand{\A}{{\cal A}}
+\newcommand{\E}{{\cal E}}
+\newcommand{\F}{{\cal F}}
+\renewcommand{\H}{{\cal H}}
+\renewcommand{\L}{{\cal L}}
+\newcommand{\M}{{\cal M}}
+\renewcommand{\O}{{\cal O}}
+\renewcommand{\S}{{\cal S}}
+\newcommand{\dash}{{\sp{\prime}}}
+\newcommand{\ddash}{{\sp{\prime\prime}}}
+\newcommand{\tdash}{{\sp{\prime\prime\prime}}}
+\newcommand{\set }[1]{{\{#1\}}}
+\newcommand{\scalar}[2]{{\langle#1,#2\rangle}}
+\newcommand{\arccot}{{\operatorname{arccot}}}
+\newcommand{\arccoth}{{\operatorname{arccoth}}}
+\newcommand{\arccosh}{{\operatorname{arccosh}}}
+\newcommand{\arcsinh}{{\operatorname{arcsinh}}}
+\newcommand{\arctanh}{{\operatorname{arctanh}}}
+\newcommand{\Log}{{\operatorname{Log}}}
+\newcommand{\Arg}{{\operatorname{Arg}}}
+\newcommand{\grad}{{\operatorname{grad}}}
+\newcommand{\graf}{{\operatorname{graf}}}
+\renewcommand{\div}{{\operatorname{div}}}
+\newcommand{\rot}{{\operatorname{rot}}}
+\newcommand{\curl}{{\operatorname{curl}}}
+\renewcommand{\Im}{{\operatorname{Im\, }}}
+\renewcommand{\Re}{{\operatorname{Re\, }}}
+\newcommand{\Res}{{\operatorname{Res}}}
+\newcommand{\vp}{{\operatorname{vp}}}
+\newcommand{\mynd}[1]{{{\operatorname{mynd}(#1)}}}
+\newcommand{\dbar}{{{\overline\partial}}}
+\newcommand{\inv}{{\operatorname{inv}}}
+\newcommand{\sign}{{\operatorname{sign}}}
+\newcommand{\trace}{{\operatorname{trace}}}
+\newcommand{\conv}{{\operatorname{conv}}}
+\newcommand{\Span}{{\operatorname{Sp}}}
+\newcommand{\stig}{{\operatorname{stig}}}
+\newcommand{\Exp}{{\operatorname{Exp}}}
+\newcommand{\diag}{{\operatorname{diag}}}
+\newcommand{\adj}{{\operatorname{adj}}}
+\newcommand{\erf}{{\operatorname{erf}}}
+\newcommand{\erfc}{{\operatorname{erfc}}}
+\renewcommand{\ast}{{\operatorname{\text{?st}}}}
+\newcommand{\Lloc}{{L_{\text{loc}}\sp 1}}
+\newcommand{\boldcdot}{{\mathbb \cdot}}
+%\newcommand{\Cinf0}[1]{{C_0\sp{\infty}(#1)}}
+\newcommand{\supp}{{\text{supp}\, }}
+\newcommand{\chsupp}{{\text{ch supp}\, }}
+\newcommand{\singsupp}{{\text{sing supp}\, }}
+\newcommand{\SL}[1]{{\dfrac {1}{\varrho} \bigg(-\dfrac d{dx}\bigg(p\dfrac {d#1}{dx}\bigg)+q#1\bigg)}}
+\newcommand{\SLL}[1]{-\dfrac d{dx}\bigg(p\dfrac {d#1}{dx}\bigg)+q#1}
+\newcommand{\Laplace}[1]{\dfrac{\partial^2 #1}{\partial x^2}+\dfrac{\partial^2 #1}{\partial y^2}}
+\newcommand{\polh}[1]{{\widehat #1_{\C^n}}}
+\newcommand{\tilv}{{}}
+
+\newcommand{\sz}{\overline{z}}
+\newcommand{\saf}{\overline{f}}
+\newcommand{\sw}{\overline{w}}
+
+\newcommand{\pz}{\partial_z}
+\newcommand{\psz}{\partial_{\overline{z}}}
+%%%
+
+\newcommand{\Nv}{\mbox{${\bf N}$}}
+
+\newcommand{\Bv}{\mbox{${\bf B}$}}
+
+
+\newcommand{\Tv}{\mbox{${\bf T}$}}
+%%%
+
+\centerline{\bf \LARGE Líkindareikningur og Tölfræði STÆ203G}
+\medskip %breyta
+
+
+
+
+\centerline{\bf \Large Tölvuverkefni 4 }
+\centerline{\bf Egill Ian Guðmundsson, 260693-2639}
+
+\medskip
+
+\section{Verkefni}
+
+Gerið ráð fyrir að slembiúrtak $ X_1,...,X_n $ af stærð $ n $ sé dregið úr normaldreifingu með meðalgildi $ \mu = 96 $ og $ \sigma = 13 $. Stikann $ \sigma $ er hægt að meta með eftirfarandi metlum. Annars vegar með:
+
+$$\hat{\sigma_1} = s = \sqrt{\dfrac{1}{n-1} \sum_{n}^{i = 1} (X_i - \bar{X})^2}$$
+
+og hins vegar með:
+
+$$\hat{\sigma_2} = \dfrac{IQR}{1.349}$$
+
+Þar sem IQR er fjórðungsbil úrtaks. Þannig er $ \hat{\sigma_1} $ staðalfrávik úrtaks og $ \hat{\sigma_2} $ byggir á fjórðungsbili úrtaks.
+
+\begin{enumerate}
+	\item Teiknið bjaga metils $ \hat{\sigma_1} $ sem fall af n. Notið lograskala fyrir n og notið úrtaksstærðir $ n = \{ 5,9,16,28,50,90,160,280,500,900,1600,2800,5000,9000,16000\} $. Fyrir hverja úrtaksstærð n, notið 10000 úrtök til að reikna gildið á  $ \hat{\sigma_1} $ og reiknið meðaltalið af þessum gildum til að meta væntigildi metilsins.
+	
+	\medskip
+	
+	\textbf{Svar: } Notum fyrra forritið í viðauka með skipun \\ \verb|estimatorAssignment(nVector, 96, 13, 10000, 1, 1)| til að fá:
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width = 15cm]{sigma1bias.png}
+	\end{figure}
+	
+	\newpage
+	
+	\item Teiknið dreifni metilsins $ \hat{\sigma_1} $ sem fall af n. Notið lograskala fyrir bæði n og dreifni metilsins. Notið sömu skilyrði og að ofan og reiknið dreifnina fyrir hvert úrtak til að meta dreifni metilsins.
+	
+	\medskip
+	
+	\textbf{Svar: } Notum fyrra forrit með \\
+	\verb|estimatorAssignment(nVector, 96, 13, 10000, 2, 1)| til að fá:
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width = 15cm]{sigma1variance.png}
+	\end{figure}
+		
+	\newpage
+	
+	\item Teiknið meðalferskekkju metils $ \hat{\sigma_1} $ sem fall af n.  Notið lograskala fyrir bæði n og dreifni metilsins. Notið sömu skilyrði og að ofan og reiknið meðalferskekkjuna fyrir hvert úrtak út frá bjaga og dreifni metilsins.
+	
+	\textbf{Svar: } Notum fyrra forrit með skipun \\
+	 \verb|estimatorAssignment(nVector, 96, 13, 10000, 3, 1)| til að fá mynd:
+	 
+	 \begin{figure}[h]
+	 	\centering
+	 	\includegraphics[width = 15cm]{sigma1quaderror.png}
+	 \end{figure}
+	 
+	 \newpage
+	 
+	 \item Teiknið bjaga metils $ \hat{\sigma_2} $ sem fall af n. Notið lograskala fyrir n og notið sömu skilyrði og að ofan.
+	 
+	 \textbf{Svar: } Keyrum fyrra forrit með \\ \verb|estimatorAssignment(nVector, 96, 13, 10000, 1, 2)| og fáum:
+	 
+	 \begin{figure}[h]
+	 	\centering
+	 	\includegraphics[width = 15cm]{sigma2bias.png}
+	 \end{figure}
+	 
+	 \newpage
+	 
+	 \item Teiknið dreifni metils $ \hat{\sigma_2} $ sem fall af n. Notið lograskala fyrir n og dreifnina og notið sömu skilyrði og að ofan.
+	 
+	 \medskip
+	 
+	 \textbf{Svar: } Keyrum fyrra forrit með \\ \verb|estimatorAssignment(nVector, 96, 13, 10000, 2, 2)| og fáum:
+	 
+	 \begin{figure}[h]
+	 	\centering
+	 	\includegraphics[width = 15cm]{sigma2variance.png}
+	 \end{figure}
+	 
+	 \newpage
+	 
+	 \item Teiknið meðalferskekkju metils $ \hat{\sigma_2} $ sem fall af n.  Notið lograskala fyrir bæði n og dreifni metilsins. Notið sömu skilyrði og að ofan og reiknið meðalferskekkjuna fyrir hvert úrtak út frá bjaga og dreifni metilsins.
+	 
+	 \medskip
+	 
+	 \textbf{Svar: } Keyrum fyrra forrit með \\ \verb|estimatorAssignment(nVector, 96, 13, 10000, 3, 2)| og fáum:
+	 
+	 \newpage
+	 
+	 \begin{figure}[h]
+	 	\centering
+	 	\includegraphics[width = 15cm]{sigma2quaderror.png}
+	 \end{figure}
+	 
+	 \item Byggt á myndunum hér að ofan, hvorn metilinn teljið þið vera betri til að meta staðalfrávik? Útskýrið með hliðsjón af bjaga, dreifni og meðalferskekkju metlanna.
+	 
+	 \medskip
+	 
+	 Eins og sést á gröfunum er dreifni og meðalferskekkja tiltölulega svipuð á aðferðunum tveimur. Hins vegar er bjagi aðferðanna mjög ólíkur. Bjagi $ \hat{\sigma_1} $ er mikill í fyrstu en minnkar ágætlega eftir því sem úrtak stækkar og virðist stefna á 0. Bjagi $ \hat{\sigma_2} $ lækkar einnig með vaxandi úrtaksstærð en ekki jafn hratt og í tilfelli $ \hat{\sigma_1} $. Því er $ \hat{\sigma_1} $ heppilegari kostur sem metill.
+	 
+	 \newpage
+	 
+	 \item Látum $ \eta_p $ tákna 100p-tu sætisstærð í normaldreifingu. Um $ \eta_p $ gildir $ \eta_p = \mu + z_{1-p} \sigma $. Hermið gögn frá ofangreindri normaldreifingu þegar $ n = 23 $ og 1.000.000 ítrunum. $ \eta_{0.31} $ er 31. sætisstærðin í normaldreifingunni. Notið eftirfarandi 95\% öryggisbil:
+	 
+	 $$\left( \bar{x} + z_{0.69} \cdot s \right) \pm z_{0.025} \dfrac{\sqrt{s^2 + 0.5 z^2+{0.69} s^2}}{\sqrt{n}}$$
+	 
+	 Metið öryggisstig öryggisbilsins fyrir $ \eta_{0.31} $. Inniheldur öryggisbilið rétta gildið á $ \eta_{0.31} $ í 95\% tilfella? Öryggisbilið hér að ofan byggir á nálgun og ekki gefið að öryggisstig þess sé nákvæmlega 95\%
+	 
+	 \medskip
+	 
+	 \textbf{Svar: } Notum seinna forritið með skipun \\ \verb|confidenceIntervalAssignment(23, 96, 13, 1000000)| \\
+	 til að fá niðurstöðu. Það var óljóst hvort verið var að tala um staðalfrávik eða metil $ \hat{\sigma_1} = s $ svo reiknað var með báðum stærðum. Ef reiknað var með staðalfráviki með skipun \verb|sd()| í R fékkst að öryggisstig öryggisbilsins er 93.5779\% og því inniheldur það ekki rétta gildi $ \eta_{0.31} $ í 95\% tilfella. Sé notast við formúlu fyrir s eins og kemur fyrir fremst í verkefninu er öryggisstig bilsins 95.4881 og inniheldur rétt gildi á $ \eta_{0.31} $ í 95\% tilfella.
+\end{enumerate}
+
+\newpage
+
+\section{Viðauki}
+
+\lstinputlisting{estimatorAssignment.r}
+
+\lstinputlisting{confidenceIntervalAssignment.r}
+
+
+\end{document}

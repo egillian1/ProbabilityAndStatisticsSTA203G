@@ -1,0 +1,829 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2016.3.2)  12 APR 2016 15:18
+entering extended mode
+**./tolvuverkefni4.tex
+(tolvuverkefni4.tex
+LaTeX2e <2015/10/01> patch level 2
+Babel <3.9n> and hyphenation patterns for 69 languages loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
+Package: babel 2016/01/08 3.9n The Babel package
+
+*************************************
+* Local config file bblopts.cfg used
+*
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\babel-icelandic\icelandic.
+ldf
+Language: icelandic 2016/01/14 v1.2b Icelandic support from the babel system
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.def"
+File: babel.def 2016/01/08 3.9n Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+Package babel Info: Making " an active character on input line 127.
+\pl@left=\dimen104
+\pl@down=\dimen105
+\pl@right=\dimen106
+\pl@temp=\dimen107
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latexsym.sty"
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+Package: amsmath 2013/01/14 v2.14 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen108
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen109
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 210.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 306.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 378.
+LaTeX Info: Redefining \dots on input line 381.
+LaTeX Info: Redefining \cdots on input line 466.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen110
+LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip10
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks16
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks17
+\eqnshift@=\dimen111
+\alignsep@=\dimen112
+\tagshift@=\dimen113
+\tagwidth@=\dimen114
+\totwidth@=\dimen115
+\lineht@=\dimen116
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2665.
+LaTeX Info: Redefining \] on input line 2666.
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\enumitem\enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\enitkv@toks@=\toks20
+\labelindent=\skip46
+\enit@outerparindent=\dimen117
+\enit@toks=\toks21
+\enit@inbox=\box28
+\enitdp@description=\count100
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks22
+\verbatim@line=\toks23
+\verbatim@in@stream=\read1
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks24
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 94.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count101
+))
+\Gin@req@height=\dimen118
+\Gin@req@width=\dimen119
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyhdr\fancyhdr.sty
+\fancy@headwidth=\skip47
+\f@ncyO@elh=\skip48
+\f@ncyO@erh=\skip49
+\f@ncyO@olh=\skip50
+\f@ncyO@orh=\skip51
+\f@ncyO@elf=\skip52
+\f@ncyO@erf=\skip53
+\f@ncyO@olf=\skip54
+\f@ncyO@orf=\skip55
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\lastpage\LastPage.sty
+
+LaTeX Warning: You have requested package `LastPage',
+               but the package provides `lastpage'.
+
+Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\frontendlayer\tikz.sty
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgf.sty
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfrcs.sty
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-co
+mmon.tex
+\pgfutil@everybye=\toks25
+\pgfutil@tempdima=\dimen120
+\pgfutil@tempdimb=\dimen121
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-co
+mmon-lists.tex))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfutil-la
+tex.def
+\pgfutil@abb=\box29
+ (C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\ms\everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfrcs.cod
+e.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\basiclayer\pgfcore.sty
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\systemlayer\pgfsys.sty
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys.c
+ode.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.co
+de.tex
+\pgfkeys@pathtoks=\toks26
+\pgfkeys@temptoks=\toks27
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeysfil
+tered.code.tex
+\pgfkeys@tmptoks=\toks28
+))
+\pgf@x=\dimen122
+\pgf@y=\dimen123
+\pgf@xa=\dimen124
+\pgf@ya=\dimen125
+\pgf@xb=\dimen126
+\pgf@yb=\dimen127
+\pgf@xc=\dimen128
+\pgf@yc=\dimen129
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count102
+\c@pgf@countb=\count103
+\c@pgf@countc=\count104
+\c@pgf@countd=\count105
+\t@pgf@toka=\toks29
+\t@pgf@tokb=\toks30
+\t@pgf@tokc=\toks31
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys-p
+dftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsys-c
+ommon-pdf.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsysso
+ftpath.code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count106
+\pgfsyssoftpath@bigbuffer@items=\count107
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\systemlayer\pgfsyspr
+otocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcore.c
+ode.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.te
+x
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathcalc.cod
+e.tex
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathutil.cod
+e.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathparser.c
+ode.tex
+\pgfmath@dimen=\dimen130
+\pgfmath@count=\count108
+\pgfmath@box=\box30
+\pgfmath@toks=\toks32
+\pgfmath@stack@operand=\toks33
+\pgfmath@stack@operation=\toks34
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.code.tex
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.basic.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.trigonometric.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.random.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.comparison.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.base.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.round.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.misc.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfunction
+s.integerarithmetics.code.tex)))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmathfloat.co
+de.tex
+\c@pgfmathroundto@lastzeros=\count109
+))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepo
+ints.code.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen131
+\pgf@picmaxx=\dimen132
+\pgf@picminy=\dimen133
+\pgf@picmaxy=\dimen134
+\pgf@pathminx=\dimen135
+\pgf@pathmaxx=\dimen136
+\pgf@pathminy=\dimen137
+\pgf@pathmaxy=\dimen138
+\pgf@xx=\dimen139
+\pgf@xy=\dimen140
+\pgf@yx=\dimen141
+\pgf@yy=\dimen142
+\pgf@zx=\dimen143
+\pgf@zy=\dimen144
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepa
+thconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen145
+\pgf@path@lasty=\dimen146
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepa
+thusage.code.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen147
+\pgf@shorten@start@additional=\dimen148
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoresc
+opes.code.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box31
+\pgf@hbox=\box32
+\pgf@layerbox@main=\box33
+\pgf@picture@serial@count=\count110
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoregr
+aphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen149
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoretr
+ansformations.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen150
+\pgf@pt@y=\dimen151
+\pgf@pt@temp=\dimen152
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorequ
+ick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreob
+jects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepa
+thprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorear
+rows.code.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen153
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoresh
+ade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen154
+\pgf@sys@shading@range@num=\count111
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreim
+age.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoreex
+ternal.code.tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box34
+))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorela
+yers.code.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcoretr
+ansparency.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\basiclayer\pgfcorepa
+tterns.code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulesha
+pes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box35
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmoduleplo
+t.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-
+version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen155
+\pgf@nodesepend=\dimen156
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\compatibility\pgfcomp-
+version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgffor.sty
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\utilities\pgfkeys.sty
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgfkeys.co
+de.tex))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\pgf\math\pgfmath.sty
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.te
+x))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\utilities\pgffor.cod
+e.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\math\pgfmath.code.te
+x)
+\pgffor@iter=\dimen157
+\pgffor@skip=\dimen158
+\pgffor@stack=\toks35
+\pgffor@toks=\toks36
+))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\t
+ikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibrary
+plothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count112
+\pgfplotmarksize=\dimen159
+)
+\tikz@lastx=\dimen160
+\tikz@lasty=\dimen161
+\tikz@lastxsaved=\dimen162
+\tikz@lastysaved=\dimen163
+\tikzleveldistance=\dimen164
+\tikzsiblingdistance=\dimen165
+\tikz@figbox=\box36
+\tikz@figbox@bg=\box37
+\tikz@tempbox=\box38
+\tikz@tempbox@bg=\box39
+\tikztreelevel=\count113
+\tikznumberofchildren=\count114
+\tikznumberofcurrentchild=\count115
+\tikz@fig@count=\count116
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmodulemat
+rix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count117
+\pgfmatrixcurrentcolumn=\count118
+\pgf@matrix@numberofcolumns=\count119
+)
+\tikz@expandcount=\count120
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count121
+\float@exts=\toks37
+\float@box=\box40
+\@float@everytoks=\toks38
+\@floatcapt=\box41
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\pgfplots\pgfplots.sty
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.revisi
+on.tex)
+Package: pgfplots 2016/01/06 v1.13 Data Visualization (1.13)
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.code.t
+ex
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotscore.co
+de.tex
+\t@pgfplots@toka=\toks39
+\t@pgfplots@tokb=\toks40
+\t@pgfplots@tokc=\toks41
+\pgfplots@tmpa=\dimen166
+\c@pgfplots@coordindex=\count122
+\c@pgfplots@scanlineindex=\count123
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\sys\pgfplotssys
+generic.code.tex))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\libs\pgfplotsli
+brary.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\oldpgfcompatib\
+pgfplotsoldpgfsupp_loader.code.tex
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibrary
+fpu.code.tex)
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\oldpgfcompatib\
+pgfplotsoldpgfsupp_pgflibraryfpu.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\oldpgfcompatib\
+pgfplotsoldpgfsupp_pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count124
+))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotsut
+il.code.tex
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\liststructure\p
+gfplotsliststructure.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\liststructure\p
+gfplotsliststructureext.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\liststructure\p
+gfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count125
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\liststructure\p
+gfplotsmatrix.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\numtable\pgfplo
+tstableshared.code.tex
+\c@pgfplotstable@counta=\count126
+\t@pgfplotstable@a=\toks42
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\liststructure\p
+gfplotsdeque.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotsbi
+nary.code.tex
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotsbi
+nary.data.code.tex))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotsut
+il.verb.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\libs\pgflibrary
+pgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count127
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\sys\pgflibraryp
+gfplots.surfshading.pgfsys-pdftex.def)))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotsco
+lormap.code.tex
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\util\pgfplotsco
+lor.code.tex))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotsstacked
+plots.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotsplothan
+dlers.code.tex
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotsmeshplo
+thandler.code.tex
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotsmeshplo
+timage.code.tex)))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.scalin
+g.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotscoordpr
+ocessing.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.errorb
+ars.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.marker
+s.code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplotsticks.c
+ode.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgfplots\pgfplots.paths.
+code.tex)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrarydecorations.code.tex
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\modules\pgfmoduledec
+orations.code.tex
+\pgfdecoratedcompleteddistance=\dimen167
+\pgfdecoratedremainingdistance=\dimen168
+\pgfdecoratedinputsegmentcompleteddistance=\dimen169
+\pgfdecoratedinputsegmentremainingdistance=\dimen170
+\pgf@decorate@distancetomove=\dimen171
+\pgf@decorate@repeatstate=\count128
+\pgfdecorationsegmentamplitude=\dimen172
+\pgfdecorationsegmentlength=\dimen173
+)
+\tikz@lib@dec@box=\box42
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrarydecorations.pathmorphing.code.tex
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\decoration
+s\pgflibrarydecorations.pathmorphing.code.tex))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibrarydecorations.pathreplacing.code.tex
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\decoration
+s\pgflibrarydecorations.pathreplacing.code.tex))
+\pgfplots@numplots=\count129
+\pgfplots@xmin@reg=\dimen174
+\pgfplots@xmax@reg=\dimen175
+\pgfplots@ymin@reg=\dimen176
+\pgfplots@ymax@reg=\dimen177
+\pgfplots@zmin@reg=\dimen178
+\pgfplots@zmax@reg=\dimen179
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\frontendlayer\tikz\l
+ibraries\tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\generic\pgf\libraries\pgflibrary
+plotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+)))
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+\lst@mode=\count130
+\lst@gtempboxa=\box43
+\lst@token=\toks43
+\lst@length=\count131
+\lst@currlwidth=\dimen180
+\lst@column=\count132
+\lst@pos=\count133
+\lst@lostspace=\dimen181
+\lst@width=\dimen182
+\lst@newlines=\count134
+\lst@lineno=\count135
+\lst@maxwidth=\dimen183
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count136
+\lst@skipnumbers=\count137
+\lst@framebox=\box44
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang2.sty
+File: lstlang2.sty 2015/06/04 1.6 listings language file
+)
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang3.sty
+File: lstlang3.sty 2015/06/04 1.6 listings language file
+)
+(tolvuverkefni4.aux)
+\openout1 = `tolvuverkefni4.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+
+(C:\Users\egill\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count138
+\scratchdimen=\dimen184
+\scratchbox=\box45
+\nofMPsegments=\count139
+\nofMParguments=\count140
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count141
+\MPscratchDim=\dimen185
+\MPnumerator=\count142
+\makeMPintoPDFobject=\count143
+\everyMPtoPDFconversion=\toks45
+)
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             https://www.ctan.org/pkg/pageslts
+(lastpage)             ! on input line 48.
+ ABD: EveryShipout initializing macros
+
+Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
+ick labels; missing features). Consider writing \pgfplotsset{compat=1.13} into 
+your preamble.
+ on input line 48.
+
+\c@lstlisting=\count144
+LaTeX Font Info:    Try loading font information for U+lasy on input line 158.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 158.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 158.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 173.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+<sigma1bias.png, id=4, 478.78876pt x 321.6015pt>
+File: sigma1bias.png Graphic file (type png)
+ <use sigma1bias.png>
+Package pdftex.def Info: sigma1bias.png used on input line 177.
+(pdftex.def)             Requested size: 426.79134pt x 286.67589pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1{C:/Users/egill/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
+
+]
+<sigma1variance.png, id=21, 519.74174pt x 323.40825pt>
+File: sigma1variance.png Graphic file (type png)
+
+<use sigma1variance.png>
+Package pdftex.def Info: sigma1variance.png used on input line 191.
+(pdftex.def)             Requested size: 426.79134pt x 265.57645pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <./sigma1bias.png>] <sigma1quaderror.png, id=26, 479.391pt x 321.6015pt>
+File: sigma1quaderror.png Graphic file (type png)
+
+<use sigma1quaderror.png>
+Package pdftex.def Info: sigma1quaderror.png used on input line 203.
+(pdftex.def)             Requested size: 426.79134pt x 286.32257pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3 <./sigma1variance.png>] <sigma2bias.png, id=31, 478.78876pt x 322.20375pt>
+File: sigma2bias.png Graphic file (type png)
+
+<use sigma2bias.png>
+Package pdftex.def Info: sigma2bias.png used on input line 214.
+(pdftex.def)             Requested size: 426.79134pt x 287.21274pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4 <./sigma1quaderror.png>]
+<sigma2variance.png, id=36, 519.74174pt x 321.6015pt>
+File: sigma2variance.png Graphic file (type png)
+ <use sigma2variance.png>
+Package pdftex.def Info: sigma2variance.png used on input line 227.
+(pdftex.def)             Requested size: 426.79134pt x 264.09279pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <./sigma2bias.png>] [6 <./sigma2variance.png>]
+<sigma2quaderror.png, id=45, 478.1865pt x 322.20375pt>
+File: sigma2quaderror.png Graphic file (type png)
+
+<use sigma2quaderror.png>
+Package pdftex.def Info: sigma2quaderror.png used on input line 242.
+(pdftex.def)             Requested size: 426.79134pt x 287.58638pt.
+ [7 <./sigma2quaderror.png>] [8]
+(estimatorAssignment.r [9]) (confidenceIntervalAssignment.r [10])
+
+AED: lastpage setting LastPage
+[11] (tolvuverkefni4.aux) ) 
+Here is how much of TeX's memory you used:
+ 24609 strings out of 493634
+ 596799 string characters out of 3141315
+ 946271 words of memory out of 3000000
+ 27566 multiletter control sequences out of 15000+200000
+ 14621 words of font info for 44 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 55i,13n,77p,734b,2282s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\egill\AppData\Local\MiKTeX\2.9\fonts\pk\l
+jfour\jknappen\ec\dpi600\ectt1000.pk> <C:\Users\egill\AppData\Local\MiKTeX\2.9\
+fonts\pk\ljfour\jknappen\ec\dpi600\ecrm0600.pk> <C:\Users\egill\AppData\Local\M
+iKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk> <C:\Users\egill\AppDa
+ta\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1200.pk> <C:\Users\e
+gill\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx1728.pk> <
+C:\Users\egill\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecbx
+2074.pk> <C:\Users\egill\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\d
+pi600\ecrm1200.pk><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmex10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmmi12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on tolvuverkefni4.pdf (11 pages, 216481 bytes).
+PDF statistics:
+ 353 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+
